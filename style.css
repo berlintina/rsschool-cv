@@ -1,4 +1,34 @@
 
 body{
-    
+   font-family: 'Roboto Condensed', sans-serif;
 }
+main{
+    width: 1024px;
+    margin: 0 auto;
+}
+.grid{
+    width: 1024px;
+    display: grid;
+        
+grid-template-columns: 1fr minmax(160px, 1fr);
+    grid-gap: 10px;
+}
+.a {
+  grid-row: 5 / 7;
+  grid-column: 1 / span 2;
+}
+
+.b {
+  grid-column: 2 / span 6;
+  grid-row: 2 / span 3;
+}
+
+header{
+    max-width: 1024px;
+    margin: 0px auto;
+}
+footer{
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
